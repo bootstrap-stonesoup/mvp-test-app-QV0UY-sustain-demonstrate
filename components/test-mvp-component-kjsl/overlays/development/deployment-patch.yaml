@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-kjsl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:017ee735bbd32652b059ab3e587c6f2d5202b7d7d289f72e549acaadd0b03c2c
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
